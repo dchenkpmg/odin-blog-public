@@ -1,2 +1,3 @@
-# odin-blog-public
-Public view of Wordpress 2
+# blog public view
+
+public view of blog
