@@ -22,7 +22,11 @@ function PostExcerpt({ post }: PostExcerptProps) {
         <PostAuthor username={post.author.username} />
         <TimeAgo timestamp={post.createdAt} />
       </div>
-      <p className={styles.postContent}>{post.content.substring(0, 100)}...</p>
+      <p className={styles.postContent}>
+        {post.content.length > 100
+          ? post.content.substring(0, 100) + "..."
+          : post.content}
+      </p>
     </article>
   );
 }
